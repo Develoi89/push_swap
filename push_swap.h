@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 15:34:38 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/05/12 17:04:09 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/05/12 18:16:51 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,12 @@ typedef struct s_stacks
 	int	*a;
 	int	*b;
 	int	alen;
-	int blen;
+	int	blen;
 }	t_stacks;
 
 void	sa(t_stacks *stack);
 void	sb(t_stacks *stack);
+void	pb(t_stacks *stack);
+void	pa(t_stacks *stack);
 
 #endif

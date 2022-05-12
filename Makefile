@@ -2,6 +2,7 @@ NAME = push_swap
 
 SRC = 	push_swap.c \
 		src/swaps.c \
+		src/pushs.c \
 
 CC = gcc
 
