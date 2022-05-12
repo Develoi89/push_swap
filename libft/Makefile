@@ -53,13 +53,15 @@ SRCB	=	ft_lstnew.c \
 			ft_lstclear.c \
 			ft_lstmap.c \
 			ft_lstlast.c 
+
+HEADER	=	libft.h
 			
 OBJB	= $(SRCB:%.c=%.o)
 OBJ		= $(SRC:%.c=%.o)
 CFLAGS	= -Wall -Wextra -Werror
 CC		= gcc
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) ${HEADER}
 	ar rc $(NAME) $(OBJ)
 
 .PHONY : clean

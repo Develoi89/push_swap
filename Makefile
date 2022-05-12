@@ -1,6 +1,7 @@
 NAME = push_swap
 
-SRC = 	push_swap.c
+SRC = 	push_swap.c \
+		src/swaps.c \
 
 CC = gcc
 

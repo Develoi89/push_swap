@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 19:05:04 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/01/31 17:36:11 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/05/12 15:42:42 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ int	ftt_isnegative(const char *str, int i)
 		return (1);
 }
 
-int	ftt_convert(const char *str, int i)
+long long int	ftt_convert(const char *str, int i)
 {
-	int	x;
+	long long int	x;
 
 	x = 0;
 	while (str[i] >= 48 && str[i] <= 57 && str[i] != '\0')
@@ -49,9 +49,9 @@ int	ftt_convert(const char *str, int i)
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	n;
-	int	c;
+	long long int	i;
+	long long int	n;
+	long long int	c;
 
 	i = 0;
 	c = 0;
@@ -62,5 +62,10 @@ int	ft_atoi(const char *str)
 	c = ftt_convert(str, i);
 	if (n < 0)
 		c = c * n;
+	if (c >= INT_MAX || c < INT_MIN)
+	{
+		ft_printf("Error num longer than int\n");
+		exit(1);
+	}
 	return (c);
 }
