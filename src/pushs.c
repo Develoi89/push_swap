@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 16:17:39 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/05/16 16:17:14 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/05/16 17:08:08 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	push_a(t_stacks *stack)
 	{
 		while (i <= stack->alen)
 		{
-			stack->a[stack->alen - i] = stack->a[stack->alen - i + 1];
+			stack->a[stack->alen - i] = stack->a[stack->alen - i - 1];
 			i++;
 		}
 	}
@@ -36,7 +36,7 @@ void	push_a(t_stacks *stack)
 		}
 	}
 	else
-		stack->b[stack->blen] = 0;
+		stack->b[0] = 0;
 }
 
 void	push_b(t_stacks *stack)
@@ -48,7 +48,7 @@ void	push_b(t_stacks *stack)
 	{
 		while (i <= stack->blen)
 		{
-			stack->b[stack->blen - i] = stack->b[stack->blen - i + 1];
+			stack->b[stack->blen - i] = stack->b[stack->blen - i - 1];
 			i++;
 		}
 	}
@@ -63,7 +63,7 @@ void	push_b(t_stacks *stack)
 		}
 	}
 	else
-		stack->a[stack->alen] = 0;
+		stack->a[0] = 0;
 }
 
 void	pb(t_stacks *stack)

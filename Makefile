@@ -3,6 +3,8 @@ NAME = push_swap
 SRC = 	push_swap.c \
 		src/swaps.c \
 		src/pushs.c \
+		src/rotate.c \
+		src/reverse.c \
 
 CC = gcc
 
