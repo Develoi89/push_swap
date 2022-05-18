@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 15:34:38 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/05/16 17:06:30 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/05/18 16:21:47 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ typedef struct s_stacks
 {
 	int	*a;
 	int	*b;
+	int	*c;
 	int	alen;
 	int	blen;
 }	t_stacks;
@@ -35,5 +36,8 @@ void	rr(t_stacks *stack);
 void	rra(t_stacks *stack);
 void	rrb(t_stacks *stack);
 void	rrr(t_stacks *stack);
+void	bubbleclon(t_stacks *stack);
+void	maximalg(t_stacks *stack);
+int		comprove(t_stacks *stack);
 
 #endif

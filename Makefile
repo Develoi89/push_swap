@@ -5,6 +5,8 @@ SRC = 	push_swap.c \
 		src/pushs.c \
 		src/rotate.c \
 		src/reverse.c \
+		src/maximalg.c \
+		src/utils.c \
 
 CC = gcc
 

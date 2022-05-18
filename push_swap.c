@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 15:09:24 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/05/17 18:39:36 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/05/18 17:22:16 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,11 @@ int	main(int argc, char **argv)
 	if (argc < 5)
 		threealg(&stack);
 	if (argc > 4 && argc < 7)
-		mediumalg(&stack); 
+		mediumalg(&stack);
+	if (argc > 6)
+	{
+		bubbleclon(&stack);
+		bigalg(&stack);
+	}
 	return (0);
 }
