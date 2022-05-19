@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 15:34:38 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/05/19 15:19:31 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/05/19 17:40:35 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,7 @@ void	rrr(t_stacks *stack);
 void	bubbleclon(t_stacks *stack);
 void	bigalg(t_stacks *stack);
 int		comprove(t_stacks *stack);
+void	checkerror(t_stacks *stack, char **argv);
+void	freeall(t_stacks *stack);
 
 #endif

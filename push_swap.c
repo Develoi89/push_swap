@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 15:09:24 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/05/19 16:20:04 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/05/19 17:40:40 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,7 @@ int	main(int argc, char **argv)
 	stack.c = malloc(sizeof(int) * (stack.alen));
 	while (j < (argc - 1))
 		stack.a[j++] = ft_atoi(argv[i++]);
+	checkerror(&stack, argv);
 	if (argc < 5)
 		threealg(&stack);
 	if (argc > 4 && argc < 7)
@@ -82,5 +83,6 @@ int	main(int argc, char **argv)
 		bubbleclon(&stack);
 		bigalg(&stack);
 	}
+	freeall(&stack);
 	return (0);
 }
