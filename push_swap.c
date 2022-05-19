@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 15:09:24 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/05/18 17:22:16 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/05/19 16:20:04 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,7 @@ int	main(int argc, char **argv)
 	stack.blen = 0;
 	stack.a = malloc(sizeof(int) * (stack.alen));
 	stack.b = malloc(sizeof(int) * (stack.alen));
+	stack.c = malloc(sizeof(int) * (stack.alen));
 	while (j < (argc - 1))
 		stack.a[j++] = ft_atoi(argv[i++]);
 	if (argc < 5)
