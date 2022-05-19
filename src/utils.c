@@ -6,7 +6,7 @@
 /*   By: ealonso- <ealonso-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 15:52:20 by ealonso-          #+#    #+#             */
-/*   Updated: 2022/05/19 17:41:56 by ealonso-         ###   ########.fr       */
+/*   Updated: 2022/05/19 18:14:29 by ealonso-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ void	checknum(char **argv, t_stacks *stack)
 	{
 		while (argv [i][j] != '\0')
 		{
+			if (argv[i][j] == '-')
+				j++;
 			if (argv[i][j] < 48 || argv[i][j] > 57)
 			{
 				ft_printf("Error\n");
